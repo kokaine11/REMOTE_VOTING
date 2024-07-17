@@ -18,7 +18,3 @@
 
 7.Run the script http://localhost/voting management system
 
-username  Nurhodelta
-password  password
-
-Brought to you by: www.CampCodes.com
