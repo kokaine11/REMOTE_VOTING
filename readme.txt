@@ -16,4 +16,9 @@
 
 6. Import votesystem.sql file(given inside the zip package in SQL file folder)
 
+<<<<<<< HEAD
 7.Run the script http://localhost/voting management system
+=======
+7.Run the script http://localhost/voting management system
+
+>>>>>>> 0ad2346d91c4301423e5c53d4c591b9f66898db4
