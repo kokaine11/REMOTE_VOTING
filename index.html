@@ -1,14 +1,4 @@
 
-<?php
-    session_start();
-    if(isset($_SESSION['admin'])){
-        header('location: admin/home.php');
-    }
-    if(isset($_SESSION['voter'])){
-        header('location: home.php');
-    }
-?>
-<?php include 'includes/header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -136,16 +126,7 @@
                 </div>
             </form>
         </div>
-        <?php
-            if(isset($_SESSION['error'])){
-                echo "
-                    <div class='callout-danger text-center'>
-                        <p>".$_SESSION['error']."</p>
-                    </div>
-                ";
-                unset($_SESSION['error']);
-            }
-        ?>
+        
     </div>
 
     <?php include 'includes/scripts.php' ?>
