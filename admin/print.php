@@ -37,8 +37,8 @@ while ($rowPosition = $resultPositions->fetch_assoc()) {
     if ($pageCount === 1) {
         // Front page
         $content .= '<h1 align="center">'.$title.'</h1>';
-		$content .= '<h1 align="center">Election Result</h1>';
-		
+        $content .= '<h1 align="center">Election Result</h1>';
+        
     } else {
         // Subsequent pages
         $content .= '<h1 align="center">Election Result</h1>';
@@ -47,11 +47,11 @@ while ($rowPosition = $resultPositions->fetch_assoc()) {
 
     $content .= '
         <table border="1" cellspacing="0" cellpadding="3">
-            <tr>
-                <td width="30%" style="text-align: center;"><b>Candidate Name</b></td>
-                <td width="30%" style="text-align: center;"><b>Image</b></td>
-                <td width="20%" style="text-align: center;"><b>Votes</b></td>
-                <td width="20%" style="text-align: center;"><b>Percentage</b></td>
+            <tr style="background-color: #f2f2f2; color: #333;">
+                <td width="30%" style="text-align: center; background-color: #4CAF50; color: white;"><b>Candidate Name</b></td>
+                <td width="30%" style="text-align: center; background-color: #4CAF50; color: white;"><b>Image</b></td>
+                <td width="20%" style="text-align: center; background-color: #4CAF50; color: white;"><b>Votes</b></td>
+                <td width="20%" style="text-align: center; background-color: #4CAF50; color: white;"><b>Percentage</b></td>
             </tr>
     ';
 
@@ -90,7 +90,6 @@ while ($rowPosition = $resultPositions->fetch_assoc()) {
                 <td style="text-align: center;"><br><br><br><br>'.$votes.'</td>
                 <td style="text-align: center;"><br><br><br><br>'.$percentage.'%</td>
             </tr>
-
         ';
     }
 

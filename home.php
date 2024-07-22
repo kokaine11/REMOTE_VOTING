@@ -60,9 +60,23 @@
 				    	if($vquery->num_rows > 0){
 				    		?>
 				    		<div class="text-center">
-					    		<h3>You have voted for this election.</h3>
-					    		<a href="#view" data-toggle="modal" class="btn btn-flat btn-primary btn-lg">View Ballot</a>
-					    	</div>
+								<br><br>
+								<h3>You have voted for this election <i class="fa fa-thumbs-up" aria-hidden="true"></i> </h3>
+								<a href="#view" data-toggle="modal" class="btn btn-flat btn-primary btn-lg">View Ballot</a>
+								<!-- Insert the image -->
+								<img src="images/welldone.png" id="left-bottom-image" alt="Your Image Description">
+							</div>
+
+							<style>
+							#left-bottom-image {
+								position: absolute;
+								bottom: 120;
+								left: 0;
+								width: 220px; /* Adjust as needed */
+								height: auto; /* Maintain aspect ratio */
+							}
+							</style>
+
 				    		<?php
 				    	}
 				    	else{

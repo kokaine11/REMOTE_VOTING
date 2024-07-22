@@ -30,6 +30,13 @@
                       <input type="text" class="form-control" id="voters_id" name="voters_id" required>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="code" class="col-sm-3 control-label">Code</label>
+
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="code" name="code" required>
+                    </div>
+                </div>
                 <!-- <div class="form-group">
                     <label for="password" class="col-sm-3 control-label">Password</label>
 
@@ -85,6 +92,13 @@
 
                     <div class="col-sm-9">
                       <input type="text" class="form-control" id="voters_id" name="voters_id" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="code" class="col-sm-3 control-label">Code</label>
+
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="code" name="code" required>
                     </div>
                 </div>
                 <!-- <div class="form-group">

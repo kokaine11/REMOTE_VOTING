@@ -6,6 +6,7 @@
 		$firstname = $_POST['firstname'];
 		$lastname = $_POST['lastname'];
 		$voter = $_POST['voter_id'];
+		$code = $_POST['code'];
 		// $password = $_POST['password'];
 
 		$sql = "SELECT * FROM voters WHERE id = $id";
@@ -19,7 +20,7 @@
 		// 	$password = password_hash($password, PASSWORD_DEFAULT);
 		// }
 
-		$sql = "UPDATE voters SET firstname = '$firstname', lastname = '$lastname', voter_id = '$voter' WHERE id = '$id'";
+		$sql = "UPDATE voters SET firstname = '$firstname', lastname = '$lastname', voter_id = '$voter', code = '$code' WHERE id = '$id'";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Voter updated successfully';
 		}
